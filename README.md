@@ -1,4 +1,17 @@
-# Connecting to AlloyDB
+# Stack
+
+## Cloud
+* 
+
+## App Engine Flexible
+* Examples: https://github.com/GoogleCloudPlatform/python-docs-samples/tree/main/appengine/flexible
+
+
+## Quickstart
+* AlloyDB: https://cloud.google.com/alloydb/docs/omni/quickstart
+* docker run --name db -e POSTGRES_PASSWORD=AlloyPassword -d google/alloydbomni --expose 5432
+* docker exec -it db psql -h localhost -U postgres
+* 
 
 ## Before you begin
 
