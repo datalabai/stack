@@ -5,6 +5,8 @@
 
 ## App Engine Flexible
 * Examples: https://github.com/GoogleCloudPlatform/python-docs-samples/tree/main/appengine/flexible
+* * AlloyDB: https://github.com/GoogleCloudPlatform/alloydb-auth-proxy
+* AlloyDB: https://github.com/GoogleCloudPlatform/alloydb-python-connector
 
 
 ## Quickstart
@@ -43,36 +45,6 @@ export DB_POST=5432
 Note: Saving credentials in environment variables is convenient, but not secure - consider a more
 secure solution such as [Secret Manager](https://cloud.google.com/secret-manager/) to help keep secrets safe.
 
-
-## Deploy to App Engine Standard
-
-To run on GAE-Standard, create an App Engine project by following the setup for these 
-[instructions](https://cloud.google.com/appengine/docs/standard/python3/quickstart#before-you-begin).
-
-First, update `app.standard.yaml` with the correct values to pass the environment 
-variables into the runtime. Your `app.standard.yaml` file should look like this:
-
-```yaml
-runtime: python37
-entrypoint: gunicorn -b :$PORT app:app
-
-env_variables:
-  INSTANCE_HOST: '<IP Address of Cluster>'
-  DB_PORT: 5432
-  DB_USER: <YOUR_DB_USER_NAME>
-  DB_PASS: <YOUR_DB_PASSWORD>
-  DB_NAME: <YOUR_DB_NAME>
-```
-
-Note: Saving credentials in environment variables is convenient, but not secure - consider a more
-secure solution such as [Secret Manager](https://cloud.google.com/secret-manager/docs/overview) to
-help keep secrets safe.
-
-Next, the following command will deploy the application to your Google Cloud project:
-
-```bash
-gcloud app deploy app.standard.yaml
-```
 
 ## Deploy to App Engine Flexible
 
