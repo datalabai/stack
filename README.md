@@ -1,15 +1,19 @@
 # Stack
 
-## Cloud
-* 
+## Stack
+* Cloud: App Engine Flexible, AlloyDB, OAuth, Vertex AI, ...
+* Firebase:
+* Solana:
+* Frontend:
+
 
 ## App Engine Flexible
 * Examples: https://github.com/GoogleCloudPlatform/python-docs-samples/tree/main/appengine/flexible
-* * AlloyDB: https://github.com/GoogleCloudPlatform/alloydb-auth-proxy
+* AlloyDB: https://github.com/GoogleCloudPlatform/alloydb-auth-proxy
 * AlloyDB: https://github.com/GoogleCloudPlatform/alloydb-python-connector
 
 
-## Quickstart
+## AlloyDB
 * AlloyDB: https://cloud.google.com/alloydb/docs/omni/quickstart
 * docker run --name db -e POSTGRES_PASSWORD=AlloyPassword -d google/alloydbomni --expose 5432
 * docker exec -it db psql -h localhost -U postgres
